@@ -5,7 +5,7 @@ phases:
     runtime-versions:
         nodejs: 12
     commands:
-      - echo 'Installing Node js and yarn...''
+      - echo 'Installing Node js and yarn...'
       - curl -sL https://rpm.nodesource.com/setup_12.x | bash -
       - yum -y install nodejs yarn
     finally:
