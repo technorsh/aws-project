@@ -7,7 +7,7 @@ phases:
     commands:
       - echo 'Installing Node js and yarn...'
       - curl -sL https://rpm.nodesource.com/setup_12.x | bash -
-      - yum -y install nodejs npm
+      - yum -y install nodejs npm --skip-broken
       - npm install --global yarn
     finally:
       - echo 'Node and Yarn Installed successfully ...' 
