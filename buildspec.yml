@@ -11,7 +11,7 @@ phases:
       - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
       - apt install --no-install-recommends yarn
     finally:
-      - echo Node & Yarn Installed successfully ... 
+      - echo 'Node and Yarn Installed successfully ...' 
   pre_build:
     commands:
       - echo Installing Dependencies ...
